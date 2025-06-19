@@ -1,14 +1,24 @@
-// PUBLIC_INTERFACE
-/**
- * Initializes and exports a Supabase client.
- * Replace the placeholders with the actual Supabase URL and KEY in real deployments.
- */
-// import { createClient } from "@supabase/supabase-js";
+import { createClient } from '@supabase/supabase-js';
 
-const SUPABASE_URL = "https://your-project-url.supabase.co";
-const SUPABASE_ANON_KEY = "your-anon-key";
+const supabaseUrl = 'https://kwznqztqlvkeoxjzlhkm.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt3em5xenRxbHZrZW94anpsaGttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAwNzIzMzMsImV4cCI6MjA2NTY0ODMzM30.4SBDmL0SuVsGqQeubAKjVH0lXX5JInlM-f5vg4gFHsk';
+export const supabase = createClient(supabaseUrl, supabaseKey);
 
-// export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+/*
+  Supabase schema notes:
+  - Auth table: stores primary user auth.
+  - Table: user_profiles
+    - id (UUID, PK) references Auth user id
+    - role: "citizen" | "authority"
+    - Add more fields as needed.
+  - Table: complaints
+    - id (PK), user_id (references user_profiles.id), description, status, timestamps, etc.
 
-// Placeholder export to avoid build error in template
-export const supabase = null;
+  Example queries:
+  - Write complaint:
+      await supabase.from("complaints").insert({ user_id, description, ... });
+  - Fetch for dashboard:
+      await supabase.from("complaints").select("*");
+  - Fetch my reports:
+      await supabase.from("complaints").select("*").eq("user_id", user.id);
+*/
