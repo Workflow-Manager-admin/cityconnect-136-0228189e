@@ -1,56 +1,122 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-// PUBLIC_INTERFACE
-/**
- * Home - landing page for CityConnect
- * - Visually separates flows for Citizens and Authorities.
- * - Each section links to respective signup/login screens with explicit role indicator in the route/query.
- */
-const Home = () => (
-  <div className="container" style={{ marginTop: "4rem", textAlign: "center" }}>
-    <h1 className="title">Welcome to CityConnect</h1>
-    <p className="description">Report civic issues. Track progress. Help improve city life.</p>
-    <div style={{
+/*
+  PUBLIC_INTERFACE
+  Home - Landing page with clear panel/card separation for Citizen and Authority flows.
+  Each panel has Sign Up and Log In buttons, routing to their respective role-specific pages.
+*/
+const Home = () => {
+  const navigate = useNavigate();
+  return (
+    <div className="container" style={{
+      marginTop: "3rem",
       display: "flex",
-      justifyContent: "center",
-      gap: "3rem",
-      marginTop: "2.5rem"
+      flexDirection: "column",
+      alignItems: "center"
     }}>
-      <div style={{
-        background: "#f3fbff", color: "#253850", padding: "2.5rem 2rem", borderRadius: 12,
-        minWidth: 220, boxShadow: "1px 2px 8px #ececec"
-      }}>
-        <h2>Citizen</h2>
-        <div style={{ marginBottom: 18 }}>
-          <span style={{
-            fontSize: "0.95rem", color: "#6ca1d5"
+      <h1 className="title" style={{ marginBottom: 6 }}>Welcome to CityConnect</h1>
+      <p className="description" style={{ marginBottom: "2.5rem" }}>Digital platform for city improvement. Choose your area to get started.</p>
+      <div
+        style={{
+          display: "flex",
+          gap: "3rem",
+          width: "100%",
+          maxWidth: 900,
+          justifyContent: "center",
+          marginTop: "1rem"
+        }}
+      >
+        {/* Citizen Card */}
+        <div
+          style={{
+            background: "linear-gradient(135deg, #4A90E2 25%, #d8ecfc 100%)",
+            color: "#15396b",
+            borderRadius: 14,
+            boxShadow: "0 4px 24px 0 rgba(90, 170, 255, 0.09)",
+            minWidth: 270,
+            flex: 1,
+            padding: "2.5rem 2rem",
+            textAlign: "center",
+            border: "2.5px solid #97bcf1"
+          }}
+        >
+          <h2 className="subtitle" style={{
+            fontWeight: 700,
+            fontSize: "1.7rem"
           }}>
-            Want to report an issue or track complaints?
-          </span>
-        </div>
-        <Link to="/signup?role=citizen" className="btn" style={{ marginBottom: 16, width: "100%" }}>Sign Up</Link>
-        <br />
-        <Link to="/login?role=citizen" className="btn" style={{ width: "100%" }}>Log In</Link>
-      </div>
-      <div style={{
-        background: "#fff9f3", color: "#504125", padding: "2.5rem 2rem", borderRadius: 12,
-        minWidth: 220, boxShadow: "1px 2px 8px #ececec"
-      }}>
-        <h2>Authority</h2>
-        <div style={{ marginBottom: 18 }}>
-          <span style={{
-            fontSize: "0.95rem", color: "#e1a66c"
+            Citizen
+          </h2>
+          <div style={{
+            fontSize: ".98rem",
+            marginBottom: 20,
+            color: "#30589A"
           }}>
-            Access dashboard and manage city reports.
-          </span>
+            For residents: Report issues and view your report status.
+          </div>
+          <button
+            className="btn btn-large"
+            style={{ width: "90%", margin: "10px 0" }}
+            onClick={() => navigate("/signup-citizen")}
+          >
+            Sign Up
+          </button>
+          <br />
+          <button
+            className="btn btn-large"
+            style={{ width: "90%" }}
+            onClick={() => navigate("/login-citizen")}
+          >
+            Log In
+          </button>
         </div>
-        <Link to="/signup?role=authority" className="btn" style={{ marginBottom: 16, width: "100%" }}>Sign Up</Link>
-        <br />
-        <Link to="/login?role=authority" className="btn" style={{ width: "100%" }}>Log In</Link>
+
+        {/* Authority Card */}
+        <div
+          style={{
+            background: "linear-gradient(135deg, #f9d386 0%, #fff4d8 100%)",
+            color: "#714a17",
+            borderRadius: 14,
+            boxShadow: "0 4px 24px 0 rgba(255, 204, 90, 0.10)",
+            minWidth: 270,
+            flex: 1,
+            padding: "2.5rem 2rem",
+            textAlign: "center",
+            border: "2.5px solid #f7d399"
+          }}
+        >
+          <h2 className="subtitle" style={{
+            fontWeight: 700,
+            fontSize: "1.7rem"
+          }}>
+            Authority
+          </h2>
+          <div style={{
+            fontSize: ".98rem",
+            marginBottom: 20,
+            color: "#a77022"
+          }}>
+            For city officials: Manage, review, and resolve citizen reports.
+          </div>
+          <button
+            className="btn btn-large"
+            style={{ width: "90%", margin: "10px 0" }}
+            onClick={() => navigate("/signup-authority")}
+          >
+            Sign Up
+          </button>
+          <br />
+          <button
+            className="btn btn-large"
+            style={{ width: "90%" }}
+            onClick={() => navigate("/login-authority")}
+          >
+            Log In
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Home;
