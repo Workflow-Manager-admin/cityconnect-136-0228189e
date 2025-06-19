@@ -22,4 +22,185 @@ modules by path ./.ve/ 15.1 KiB
     ./.ve/EditorOverlay.css 2.25 KiB [built] [code generated]
     ./node_modules/css-loader/dist/cjs.js!./.ve/EditorOverlay.css 697 bytes [built] [code generated]
   ./.ve/EditorOverlay.jsx 1.58 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 1297 ms
+webpack 5.99.9 compiled successfully in 1305 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.4 MiB
+  asset bundle.js 1.39 MiB [emitted] (name: main)
+  asset main.6eb841aec0cdf57363f3.hot-update.js 11 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.6eb841aec0cdf57363f3.hot-update.json 97 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.4 MiB = bundle.js 1.39 MiB main.6eb841aec0cdf57363f3.hot-update.js 11 KiB
+cached modules 1.26 MiB [cached] 39 modules
+runtime modules 27.5 KiB 14 modules
+javascript modules 4.44 KiB
+  ./src/App.js 1.7 KiB [built] [code generated]
+  ./src/pages/Home.jsx 2.74 KiB [built] [code generated]
+
+ERROR in ./src/App.js 2:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 4:0-50
+Module not found: Error: Can't resolve './pages/SignupCitizen' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 5:0-48
+Module not found: Error: Can't resolve './pages/LoginCitizen' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 6:0-54
+Module not found: Error: Can't resolve './pages/SignupAuthority' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 7:0-52
+Module not found: Error: Can't resolve './pages/LoginAuthority' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/pages/Home.jsx 2:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src/pages'
+ @ ./src/App.js 3:0-32 16:35-39
+ @ ./src/index.js 5:0-24 11:32-35
+
+6 errors have detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+webpack 5.99.9 compiled with 6 errors in 111 ms
+assets by status 1.39 MiB [cached] 2 assets
+cached modules 1.26 MiB (javascript) 27.5 KiB (runtime) [cached] 55 modules
+
+ERROR in ./src/App.js 2:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 4:0-50
+Module not found: Error: Can't resolve './pages/SignupCitizen' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 5:0-48
+Module not found: Error: Can't resolve './pages/LoginCitizen' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 6:0-54
+Module not found: Error: Can't resolve './pages/SignupAuthority' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 7:0-52
+Module not found: Error: Can't resolve './pages/LoginAuthority' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/pages/Home.jsx 2:0-47
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src/pages'
+ @ ./src/App.js 3:0-32 16:35-39
+ @ ./src/index.js 5:0-24 11:32-35
+
+6 errors have detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+webpack 5.99.9 compiled with 6 errors in 59 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 2.2 MiB
+  asset bundle.js 1.79 MiB [emitted] (name: main)
+  asset main.65742a83243f5e04456b.hot-update.js 419 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.65742a83243f5e04456b.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 2.2 MiB = bundle.js 1.79 MiB main.65742a83243f5e04456b.hot-update.js 419 KiB
+cached modules 1.26 MiB [cached] 39 modules
+runtime modules 28.7 KiB 15 modules
+javascript modules 375 KiB
+  built modules 370 KiB [built]
+    modules by path ../node_modules/react/ 44.2 KiB 2 modules
+    modules by path ../node_modules/react-dom/ 18.6 KiB
+      ../node_modules/react-dom/index.js 1.33 KiB [built] [code generated]
+      ../node_modules/react-dom/cjs/react-dom.development.js 17.3 KiB [built] [code generated]
+    ../node_modules/react-router-dom/dist/index.js 55.4 KiB [built] [code generated]
+    ../node_modules/react-router/dist/index.js 59.3 KiB [built] [code generated]
+    ../node_modules/@remix-run/router/dist/router.js 193 KiB [built] [code generated]
+  modules by path ./src/ 4.44 KiB
+    ./src/App.js 1.7 KiB [code generated]
+    ./src/pages/Home.jsx 2.74 KiB [code generated]
+
+ERROR in ./src/App.js 4:0-50
+Module not found: Error: Can't resolve './pages/SignupCitizen' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 5:0-48
+Module not found: Error: Can't resolve './pages/LoginCitizen' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 6:0-54
+Module not found: Error: Can't resolve './pages/SignupAuthority' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 7:0-52
+Module not found: Error: Can't resolve './pages/LoginAuthority' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+4 errors have detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+webpack 5.99.9 compiled with 4 errors in 311 ms
+assets by status 1.79 MiB [cached] 2 assets
+cached modules 1.61 MiB (javascript) 28.7 KiB (runtime) [cached] 62 modules
+../node_modules/react-dom/cjs/react-dom.development.js 17.3 KiB [built]
+
+ERROR in ./src/App.js 4:0-50
+Module not found: Error: Can't resolve './pages/SignupCitizen' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 5:0-48
+Module not found: Error: Can't resolve './pages/LoginCitizen' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 6:0-54
+Module not found: Error: Can't resolve './pages/SignupAuthority' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 7:0-52
+Module not found: Error: Can't resolve './pages/LoginAuthority' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+4 errors have detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+webpack 5.99.9 compiled with 4 errors in 30 ms
+Injecting EditorRootWrapper import: ../.ve/EditorRootWrapper
+assets by path *.js 2.06 MiB
+  asset bundle.js 1.72 MiB [emitted] (name: main)
+  asset main.9ec4ff9e4e361c94ed09.hot-update.js 352 KiB [emitted] [immutable] [hmr] (name: main)
+asset index.html 1.98 KiB [emitted]
+asset main.9ec4ff9e4e361c94ed09.hot-update.json 348 bytes [emitted] [immutable] [hmr]
+Entrypoint main 2.06 MiB = bundle.js 1.72 MiB main.9ec4ff9e4e361c94ed09.hot-update.js 352 KiB
+cached modules 1.25 MiB [cached] 35 modules
+runtime modules 28.7 KiB 15 modules
+javascript modules 325 KiB
+  code generated modules 312 KiB [code generated]
+    modules by path ./node_modules/ 307 KiB
+      ./node_modules/react-router-dom/dist/index.js 55.4 KiB [built] [code generated]
+      + 2 modules
+    modules by path ./src/ 4.44 KiB
+      ./src/App.js 1.7 KiB [built] [code generated]
+      ./src/pages/Home.jsx 2.74 KiB [built] [code generated]
+  modules by path ./.ve/ 12.2 KiB
+    ./.ve/EditorRootWrapper.js 2.68 KiB [built]
+    ./.ve/EditorOverlay.jsx 1.58 KiB [built]
+    ./.ve/SidePanel.js 7.93 KiB [built]
+  ./src/index.js 530 bytes [built]
+
+ERROR in ./src/App.js 4:0-50
+Module not found: Error: Can't resolve './pages/SignupCitizen' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 5:0-48
+Module not found: Error: Can't resolve './pages/LoginCitizen' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 6:0-54
+Module not found: Error: Can't resolve './pages/SignupAuthority' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 7:0-52
+Module not found: Error: Can't resolve './pages/LoginAuthority' in '/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+4 errors have detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+webpack 5.99.9 compiled with 4 errors in 389 ms
