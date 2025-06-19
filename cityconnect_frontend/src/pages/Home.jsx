@@ -1,56 +1,66 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 /*
   PUBLIC_INTERFACE
-  Home - Landing page with clear panel/card separation for Citizen and Authority flows.
-  Each panel has Sign Up and Log In buttons, routing to their respective role-specific pages.
+  Home - Presents two visually distinct cards: Citizen and Authority.
+  Each card shows a header and two buttons (Sign Up, Log In) that route to the correct pages.
+  Minimal styling ensures clear visual separation and consistency with the app.
 */
 const Home = () => {
   const navigate = useNavigate();
+
   return (
     <div className="container" style={{
-      marginTop: "3rem",
+      marginTop: "2.5rem",
       display: "flex",
       flexDirection: "column",
-      alignItems: "center"
+      alignItems: "center",
+      minHeight: "70vh"
     }}>
       <h1 className="title" style={{ marginBottom: 6 }}>Welcome to CityConnect</h1>
-      <p className="description" style={{ marginBottom: "2.5rem" }}>Digital platform for city improvement. Choose your area to get started.</p>
+      <p className="description" style={{ marginBottom: "2.0rem" }}>
+        Digital platform for city improvement. Choose your user type to get started.
+      </p>
       <div
         style={{
           display: "flex",
-          gap: "3rem",
+          gap: "2rem",
           width: "100%",
-          maxWidth: 900,
+          maxWidth: 800,
           justifyContent: "center",
           marginTop: "1rem"
         }}
       >
         {/* Citizen Card */}
-        <div
+        <section
           style={{
-            background: "linear-gradient(135deg, #4A90E2 25%, #d8ecfc 100%)",
-            color: "#15396b",
-            borderRadius: 14,
-            boxShadow: "0 4px 24px 0 rgba(90, 170, 255, 0.09)",
-            minWidth: 270,
             flex: 1,
-            padding: "2.5rem 2rem",
+            minWidth: 260,
+            maxWidth: 350,
+            background: "#eaf6fd",
+            border: "1.5px solid #72b8ea",
+            borderRadius: 12,
+            boxShadow: "0 4px 16px 0 rgba(80,160,255, 0.06)",
+            padding: "2rem 1.2rem",
+            marginBottom: "1rem",
             textAlign: "center",
-            border: "2.5px solid #97bcf1"
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center"
           }}
         >
           <h2 className="subtitle" style={{
             fontWeight: 700,
-            fontSize: "1.7rem"
+            fontSize: "1.4rem",
+            color: "#3174b8"
           }}>
             Citizen
           </h2>
           <div style={{
             fontSize: ".98rem",
-            marginBottom: 20,
-            color: "#30589A"
+            margin: "10px 0 22px 0",
+            color: "#3a6897"
           }}>
             For residents: Report issues and view your report status.
           </div>
@@ -61,7 +71,6 @@ const Home = () => {
           >
             Sign Up
           </button>
-          <br />
           <button
             className="btn btn-large"
             style={{ width: "90%" }}
@@ -69,32 +78,37 @@ const Home = () => {
           >
             Log In
           </button>
-        </div>
+        </section>
 
         {/* Authority Card */}
-        <div
+        <section
           style={{
-            background: "linear-gradient(135deg, #f9d386 0%, #fff4d8 100%)",
-            color: "#714a17",
-            borderRadius: 14,
-            boxShadow: "0 4px 24px 0 rgba(255, 204, 90, 0.10)",
-            minWidth: 270,
             flex: 1,
-            padding: "2.5rem 2rem",
+            minWidth: 260,
+            maxWidth: 350,
+            background: "#f9efd0",
+            border: "1.5px solid #e2bb74",
+            borderRadius: 12,
+            boxShadow: "0 4px 16px 0 rgba(255, 200, 90, 0.07)",
+            padding: "2rem 1.2rem",
+            marginBottom: "1rem",
             textAlign: "center",
-            border: "2.5px solid #f7d399"
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center"
           }}
         >
           <h2 className="subtitle" style={{
             fontWeight: 700,
-            fontSize: "1.7rem"
+            fontSize: "1.4rem",
+            color: "#b48620"
           }}>
             Authority
           </h2>
           <div style={{
             fontSize: ".98rem",
-            marginBottom: 20,
-            color: "#a77022"
+            margin: "10px 0 22px 0",
+            color: "#9d7722"
           }}>
             For city officials: Manage, review, and resolve citizen reports.
           </div>
@@ -105,7 +119,6 @@ const Home = () => {
           >
             Sign Up
           </button>
-          <br />
           <button
             className="btn btn-large"
             style={{ width: "90%" }}
@@ -113,8 +126,15 @@ const Home = () => {
           >
             Log In
           </button>
-        </div>
+        </section>
       </div>
+      <p style={{
+        marginTop: "2.5rem",
+        color: "var(--text-secondary)",
+        fontSize: "1rem"
+      }}>
+        <b>Note:</b> If you do not see the updated page, please reload the app in your browser or trigger a hot reload in your development environment.
+      </p>
     </div>
   );
 };
