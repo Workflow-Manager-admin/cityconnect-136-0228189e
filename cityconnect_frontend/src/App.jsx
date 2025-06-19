@@ -6,6 +6,10 @@ import SignupPage from "./pages/SignupPage";
 import DashboardPage from "./pages/DashboardPage";
 import ProtectedRoute from "./auth/ProtectedRoute";
 import ReportForm from "./components/ReportForm";
+import SignupCitizenPage from "./pages/SignupCitizenPage";
+import LoginCitizenPage from "./pages/LoginCitizenPage";
+import SignupAuthorityPage from "./pages/SignupAuthorityPage";
+import LoginAuthorityPage from "./pages/LoginAuthorityPage";
 import "./App.css";
 
 /*
@@ -59,6 +63,10 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<LoginPage onLogin={setUser} />} />
               <Route path="/signup" element={<SignupPage onRegister={setUser} />} />
+              <Route path="/signup-citizen" element={<SignupCitizenPage />} />
+              <Route path="/login-citizen" element={<LoginCitizenPage />} />
+              <Route path="/signup-authority" element={<SignupAuthorityPage />} />
+              <Route path="/login-authority" element={<LoginAuthorityPage />} />
               <Route path="/report" element={
                 <ProtectedRoute isAuthenticated={!!user}>
                   <ReportForm />
