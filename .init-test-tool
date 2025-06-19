@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/cityconnect-136-0228189e/cityconnect_frontend"
+}
